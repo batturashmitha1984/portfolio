@@ -5,83 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battu Rashmitha Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Battu Rashmitha</div>
+    <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
 <header>
     <h1>Battu Rashmitha</h1>
-    <p>+91-9959257926 | <a href="mailto:batturashmitha1802@gmail.com">batturashmitha1802@gmail.com</a></p>
-    <p><a href="https://github.com/batturashmitha" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/batturashmitha" target="_blank">LinkedIn</a></p>
+    <p class="title">AI & ML Graduate | Python Developer | Cloud & DevOps Enthusiast</p>
+    <div class="buttons">
+        <a href="Battu_Rashmitha_Resume.pdf" target="_blank">Download Resume</a>
+        <a href="#projects">View Projects</a>
+    </div>
 </header>
 
-<section>
+<!-- PROFILE SECTION -->
+<section id="profile">
     <h2>Profile</h2>
-    <p>Computer Science graduate specializing in AI & ML, with hands-on experience in building machine learning models and deploying projects on cloud platforms. Proficient in Python, data analysis, and problem-solving, with growing expertise in DevOps practices and tools like Docker, CI/CD pipelines, and AWS services, seeking to contribute effectively at TCS.</p>
+    <div class="card">
+        <p>Computer Science graduate specializing in AI & ML, with hands-on experience in building machine learning models and deploying projects on cloud platforms. Proficient in Python, problem-solving, and cloud deployment, with growing expertise in DevOps practices and tools like Docker, CI/CD pipelines, and AWS services.</p>
+    </div>
 </section>
 
-<section>
+<!-- EDUCATION SECTION -->
+<section id="education">
     <h2>Education</h2>
-    <ul>
-        <li><strong>B.Tech in CSM (AI & ML)</strong>, Ace Engineering College, Hyderabad (2020 – 2024) – CGPA: 8.28</li>
-        <li><strong>Intermediate (MPC)</strong>, SR Junior College, Hyderabad (2018 – 2020) – 90%</li>
-        <li><strong>Secondary Schooling</strong>, St John’s High School, Miryalagudal (2017 – 2018) – CGPA: 9.2</li>
-    </ul>
+    <div class="card">
+        <p class="company"><strong>B.Tech in CSM (AI & ML)</strong> – Ace Engineering College, Hyderabad (2020–2024) – CGPA: 8.28</p>
+        <p class="company"><strong>Intermediate (MPC)</strong> – SR Junior College, Hyderabad (2018–2020) – 90%</p>
+        <p class="company"><strong>Secondary Schooling</strong> – St John’s High School, Miryalagudal (2017–2018) – CGPA: 9.2</p>
+    </div>
 </section>
 
-<section>
+<!-- SKILLS SECTION -->
+<section id="skills">
     <h2>Skills</h2>
-    <ul class="skills">
-        <li>Python</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Data Structures</li>
-        <li>OOPs</li>
-        <li>COA</li>
-        <li>Machine Learning</li>
-        <li>Git & GitHub</li>
-        <li>PowerBI</li>
-        <li>AWS (Basics)</li>
-        <li>Docker (Learning)</li>
-        <li>Kubernetes (Learning)</li>
-        <li>Jenkins (Learning)</li>
-    </ul>
+    <div class="skills">
+        <div><i class="fab fa-python"></i><p>Python</p></div>
+        <div><i class="fas fa-database"></i><p>SQL</p></div>
+        <div><i class="fab fa-html5"></i><p>HTML</p></div>
+        <div><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+        <div><i class="fas fa-project-diagram"></i><p>ML</p></div>
+        <div><i class="fas fa-cogs"></i><p>Docker</p></div>
+        <div><i class="fab fa-aws"></i><p>AWS</p></div>
+    </div>
 </section>
 
-<section class="projects">
+<!-- PROJECTS SECTION -->
+<section id="projects">
     <h2>Projects</h2>
-    <p><strong>Advertisement Recommendation System (Voice-Based):</strong> I built a system to recommend relevant advertisements by predicting user gender from voice input. The project involved extracting audio features such as pitch and frequency, training a Random Forest model for gender classification, and mapping predictions to targeted ads. This improved the relevance of advertisements and enhanced user engagement.</p>
-
-    <p><strong>Cryptocurrency Price Prediction:</strong> I developed an RNN/LSTM model to predict cryptocurrency prices using historical data. The project involved preprocessing the data, performing feature engineering, and evaluating the model to ensure accurate predictions. This helped in forecasting price trends and supporting informed decision-making for traders.</p>
-
-    <p><strong>Student Stress Level Prediction:</strong> I built a machine learning model to predict student stress levels by preprocessing survey and behavioral data and training the model for accurate predictions. I developed a Flask API to serve the model, containerized it using Docker, and hosted it on AWS, making it accessible as a cloud-based application.</p>
+    <div class="card">
+        <h3>Advertisement Recommendation System (Voice-Based)</h3>
+        <p>Predicted user gender from voice input and recommended targeted ads using audio feature extraction and Random Forest, enhancing engagement.</p>
+    </div>
+    <div class="card">
+        <h3>Cryptocurrency Price Prediction</h3>
+        <p>Developed RNN/LSTM model using historical data, performed preprocessing, feature engineering, and evaluation for accurate price forecasting.</p>
+    </div>
+    <div class="card">
+        <h3>Student Stress Level Prediction</h3>
+        <p>Built a ML model to predict stress, created Flask API, containerized with Docker, and hosted on AWS as a cloud-based app.</p>
+    </div>
 </section>
 
-<section>
+<!-- CERTIFICATIONS SECTION -->
+<section id="certifications">
     <h2>Certifications</h2>
-    <ul class="certifications">
-        <li>CISCO: Programming Essentials in Python</li>
-        <li>NASSCOM: Machine Learning Foundation</li>
-    </ul>
+    <div class="card">
+        <p>CISCO: Programming Essentials in Python</p>
+        <p>NASSCOM: Machine Learning Foundation</p>
+    </div>
 </section>
 
-<section>
+<!-- INTERNSHIPS SECTION -->
+<section id="internships">
     <h2>Internships</h2>
-    <ul class="internships">
-        <li>Swecha Summer Internship Program – Learned Linux fundamentals and worked in a development environment</li>
-        <li>Developed leadership and teamwork skills through collaborative activities</li>
-        <li>Solved real-world problems using practical and analytical approaches</li>
-    </ul>
+    <div class="card">
+        <p>Swecha Summer Internship Program – Learned Linux fundamentals and worked in a development environment.</p>
+        <p>Developed leadership and teamwork skills through collaborative activities.</p>
+        <p>Solved real-world problems using practical approaches.</p>
+    </div>
 </section>
 
-<section>
+<!-- HOBBIES SECTION -->
+<section id="hobbies">
     <h2>Hobbies</h2>
-    <ul class="hobbies">
-        <li>Solving coding problems</li>
-        <li>Learning new technologies (AWS, DevOps)</li>
-        <li>Editing videos</li>
-    </ul>
+    <div class="skills">
+        <div><i class="fas fa-laptop-code"></i><p>Coding</p></div>
+        <div><i class="fas fa-robot"></i><p>Learning AWS & DevOps</p></div>
+        <div><i class="fas fa-video"></i><p>Editing Videos</p></div>
+    </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Battu Rashmitha | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
